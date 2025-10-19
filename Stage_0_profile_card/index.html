@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <article class="profile-card" data-testid="test-profile-card">
+      <aside class="profile-highlight" data-testid="test-profile-highlight">
+        <header>
+            <h2 data-testid="test-user-name">Oluwatemilorun Ojo</h2>
+          </header>
+    
+          <figure>
+            <img
+              src=images/photo_2025-02-15_18-45-21.jpg
+              alt="Profile avatar"
+              data-testid="test-user-avatar"
+            />
+          </figure>
+    
+          <p data-testid="test-user-bio">
+            I am a Technical support professional who finds fulfillment in making a positive impact on people's daily work life. I also design user-friendly websites and enjoy creating solutions that truly make a difference.
+            My goal is to be part of impactful tech projects and work in a team that offers growth and learning opportunities.
+          </p>
+    
+          <div class="time-container">
+            Current Time (ms): <span data-testid="test-user-time"></span>
+          </div>
+    
+          <nav aria-label="Social Links">
+            <ul class="social-links" data-testid="test-user-social-links">
+              <li><a href="https://x.com" target="_blank" rel="noopener noreferrer"   data-testid="test-user-social-twitter"> <i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+            </ul>
+          </nav>
+      </aside>
+
+      <aside class="profile-more-info" data-testid="test-profile-more-info">
+        <section aria-labelledby="hobbies-title">
+            <h3 id="hobbies-title">Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+              <li>Football</li>
+              <li>Research</li>
+            </ul>
+          </section>
+    
+          <section aria-labelledby="dislikes-title">
+            <h3 id="dislikes-title">Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+              <li>Lies</li>
+              <li>Unfinished code</li>
+            </ul>
+          </section>
+      </aside>
+    </article>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
